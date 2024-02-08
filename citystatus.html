@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="palindrome.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="wrapper">
+    <h2>Select City</h2>
+    <div class="inputdiv">
+        <select id="input">
+            <option value="bangaluru">Bangaluru</option>
+            <option value="chennai">Chennai</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">show staus</button>
+    </div>
+   </div>
+   <script>
+    const button=document.querySelector('button')
+    let resultdiv=document.createElement('div')
+        resultdiv.id='result'
+        document.getElementById('wrapper').appendChild(resultdiv)
+    button.addEventListener('click',displyStatus)
+    function displyStatus() {
+        const input=document.getElementById("input")
+        const city=input.options[input.selectedIndex].value
+        let population=0,LiteracyRate=0,Language=''
+        switch (city) {
+            case 'bangaluru':
+                population=333877
+                LiteracyRate=89.80
+                Language='kannada'
+                
+                break
+            case 'chennai':
+                population=543568
+                LiteracyRate=88.80
+                Language='Tamil'
+                break
+
+            case 'delhi':
+                population=788848
+                Language='Hindi'
+                LiteracyRate=78.90
+                break
+            case 'mumbai':
+                population=6789643
+                LiteracyRate=78.90
+                Language='Marathi'
+
+                
+        
+            
+        }
+     
+        let text=`The Indian city of ${ city} has papulation of ${population}.Language spoken is${Language}and literacy rate is ${LiteracyRate}%.`
+       
+         document.getElementById('result').innerHTML=text
+      
+       
+
+
+
+        
+    }
+
+   </script>
+    
+</body>
+</html>
+
+

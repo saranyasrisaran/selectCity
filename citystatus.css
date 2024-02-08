@@ -1,0 +1,63 @@
+html{
+    background-color: bisque;
+}
+#wrapper{
+    background-color:black;
+    height: 400px;
+    width: 300px;
+    margin: 30vh;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+#wrapper div, #wrapper h2{
+    display: flex;
+    justify-content: center;
+}
+#wrapper h2{
+    color: yellow;
+    text-align: center;
+}
+.inputdiv{
+ border-radius: 5px;
+ border: 2px solid black;
+ margin-top:30px ;
+ height:3em;
+ width: 250px;
+ padding-left: 20px;
+ 
+}
+#wrapper button{
+    background-color: yellow;
+    margin-top:20px ;
+ height: 2em;
+ width: 150px;
+ padding-left: 20px;
+ border-radius: 5px;
+ border: 2px solid black;
+ color: blue;
+   
+
+}
+#result{
+    color: aliceblue;
+    margin-top:20px ;
+    font-size: medium;
+
+}
+
+input:active{
+    border: none;
+}
+#input{
+    margin-top:20px ;
+    height: 2em;
+    width: 150px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
+
+
+
